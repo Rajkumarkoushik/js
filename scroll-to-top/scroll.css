@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.section1{
+    background-color: aquamarine;
+}
+.section2{
+    background-color: black;
+    color: white;
+}
+.section3{
+    background-color: brown;
+}
+.section4{
+    background-color: blue;
+}
+.scroll-top{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 3rem;
+    pointer-events: none;
+    transform: translateY(-600px);
+    transition: all .5s ease-in-out;
+}
+.scroll-top.scroll-active{
+    transform: translateY(0px);
+    pointer-events: auto;
+    transition: all .5s ease-in-out;
+}

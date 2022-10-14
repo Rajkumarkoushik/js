@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.remove{
+    display: none;
+}
+.bgcolor{
+    background-color: white;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-links{
+    display: flex;
+    gap: 3rem;
+}
+.nav-links li a{
+    text-decoration: none;
+}
+.nav-links li {
+    list-style: none;
+}
+.ham1{
+    display: none;
+}
+
+.delete{
+    display: block;
+}
+
+@media(max-width: 767px){
+    .nav-links{
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .ham1{
+        display: block;
+    }
+}
+
+
+.none{
+    display: none;
+}
+.laptop{
+    display: none;
+}

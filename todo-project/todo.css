@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(8, 201, 143);
+    font-family: Kanit;
+}
+.todo-main{
+    border: 1px solid rgb(155, 43, 43);
+    margin: 50px 0;
+    border-radius: 10px;
+    background: #fff; 
+    position: relative;
+}
+.todo-main h1{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.todo-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.todo-list li{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 8px 10px;
+}
+.todo-list li:hover{
+    background: burlywood;
+}
+.todo-details{
+    max-width: 150px;
+    border: 1px solid black;
+    background: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+
+    /* top: 3rem;
+    right: 3rem; */
+}
+.edit{
+    padding: 10px 50px 10px 10px;
+}
+.remove{
+    padding: 10px 50px 10px 10px;
+}
+.todo-details h6:hover{
+    background: rgb(92, 203, 218);
+}
+.form input{
+    height: 30px;
+    width: 400px;
+}
+.form button{
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+.form{
+    border: none;
+    margin-top: 100px;
+}
+.plus-icon{
+    position: absolute;
+    top: -25px;
+    right: -24px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: none;
+    background: rgb(92, 203, 218);
+}
+.plus-icon i{
+    font-size: 2rem;
+    font-weight: 600;
+}

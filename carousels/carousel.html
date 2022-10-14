@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousels</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="/carousels/carousel.css">
+    <!-- Font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+
+   <div class="carousels-main">
+        <div class="carousels-img slides">
+            <img src="/carousels/img1.jpg" alt="">
+        </div>
+        <div class="carousels-img slides">
+            <img src="/carousels/img2.jpg" alt="">
+        </div>
+        <div class="carousels-img slides">
+            <img src="/carousels/img3.jpg" alt="">
+        </div>
+        <div class="carousels-img slides">
+            <img src="/carousels/img4.jpg" alt="">
+        </div>
+        <div class="carousels-img slides">
+            <img src="/carousels/img5.jpg" alt="">
+        </div>
+
+        <i class="fa-solid fa-less-than prev" onclick="nextSlide(-1)"></i>
+        <i class="fa-solid fa-greater-than next" onclick="nextSlide(1)"></i>
+   </div>
+   <div class="slide-dot">
+    <span class="slide-show" onclick="presentSlide(1)"></span>
+    <span class="slide-show" onclick="presentSlide(2)"></span>
+    <span class="slide-show" onclick="presentSlide(3)"></span>
+    <span class="slide-show" onclick="presentSlide(4)"></span>
+    <span class="slide-show" onclick="presentSlide(5)"></span>
+</div>
+
+<!--  Carousels anothere method -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="/carousels/thor5.png" id="lastClone" alt="">
+            <img src="/carousels/thor1.png" alt="">
+            <img src="/carousels/thor2.png" alt="">
+            <img src="/carousels/thor3.png" alt="">
+            <img src="/carousels/thor4.png" alt="">
+            <img src="/carousels/thor5.png" alt="">
+            <img src="/carousels/thor1.png" id="firstClone" alt="">
+        </div>
+    </div>
+
+    <i class="fa-solid fa-less-than" id="prevBtn"></i>
+    <i class="fa-solid fa-greater-than" id="nextBtn" ></i>
+
+
+
+<!-- -------- -->
+    
+
+
+
+    <script src="/carousels/carousel.js"></script>
+</body>
+</html>

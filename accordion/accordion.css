@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accordion-btn{
+    background-color: rgb(44, 228, 228);
+    color: azure;
+    cursor: pointer;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: start;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+    position: relative;
+}
+.active, .accordion-btn:hover{
+    background-color: rgb(168, 168, 85);
+}
+.accordion-btn::after{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.active:after{
+    content: "-";
+    position: absolute;
+    right: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.panel{
+    padding: 0 20px;
+    max-width: 650px;
+    max-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel p{
+    padding: 10px 0;
+}
+

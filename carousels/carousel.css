@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousels-main{
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+.carousels-main img{
+    height: 100vh;
+    width: 100%;
+}
+.carousels-img{
+    display: none;
+}
+.prev, .next{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size:  18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background: black;
+}
+.slide-show{
+    cursor: pointer;
+    height: 5px;
+    width: 30px;
+    margin: 0 2px;
+    border-radius: 5px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slide-dot{
+    text-align: center;
+}
+.active, .slide-show:hover{
+    background-color: #717171;
+}
+
+
+.slides{
+    animation-name: slides;
+    animation-duration: 1.5s;
+}
+@keyframes slides{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Carousels another method */
+
+.carousel-container{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid black;
+}
+.carousel-slide{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+#nextBtn, #prevBtn{
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    color: #fff;
+    padding:  5px;
+}
+#nextBtn:hover, #prevBtn:hover{
+    background-color: black;
+    cursor: pointer;
+}

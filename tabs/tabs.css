@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.tabs button{
+    padding: 20px 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tabs-btn.tab-active{
+    background: #fff;
+}
+.tabs-content{
+    display: none;
+    margin: 0 auto;
+}
+.tabs-content.tab-active{
+    display: block;
+}
+.tabs-body{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+

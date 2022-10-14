@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.digital-clock{
+    color: aqua;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 700;
+}
+h1{
+    color: aqua;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
